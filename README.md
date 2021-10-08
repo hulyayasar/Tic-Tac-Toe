@@ -17,20 +17,34 @@ Tic-Tac-Toe is a classic game which can be played virtually anywhere. The game m
 
 
 1.Greeting message in HTML format
+
 2.Three-by-three Grid will be printed 
+
 3.System should ask first player to enter their move
+
 4.If they enter a symbol other than “X” , the system should warn the user to not enter invalid symbol and let the user enter their move.
+
 5.(First player must use the “X” symbol all the time). First player can put their symbol in any place within the Grid for the first move !
+
 6.After first player made their move ,updated three-by-three grid will be printed 
 
 7.System should ask second player to enter their move
+
 8.If they enter a symbol other than “O” , the system should warn the user to not enter invalid symbol and let the user enter their move.
+
 9.(Second player must use “O” symbol all the time).Second player can put their symbol in any place within the Grid if the place is not taken by either fist player or second player.
+
 10.After second player made their move ,updated three-by-three grid will be printed 
+
 11.System should ask first player to enter their move
+
 12.If they enter a symbol other than “X” , the system should warn the user to not enter invalid symbol and let the user enter their move.
+
 13.(first player must use “X” symbol all the time).First player can put their symbol in any place within the Grid if the place is not taken by either first player or second player.
 
-14. The game should continue with 7.step until all the places in the grid are taken. 
+14.The game should continue with 7.step until all the places in the grid are taken. 
+
 15.Updated three-by-three grid will be printed 
+
 16.The system should show a message containing all the places taken in the grid and Game is Over! 
+
