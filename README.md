@@ -1,4 +1,4 @@
-Team Name: Amigos
+Team Name:	Amigos
 
 Team Members:
 
@@ -8,7 +8,12 @@ Pallob Ghosh : Pallob07@my.yorku.ca EECS 1012 Section B Lab 01
 
 Hulya Yasar hulya00@my.yorku.ca EECS 1012 Section B Lab1 
 
+
+
+
+
 Project Title: Tic-Tac-Toe Game
+
 
 Project Description:
 
@@ -16,26 +21,37 @@ Tic-Tac-Toe is a classic game which can be played virtually anywhere. The game m
 
 
 
-1.Greeting messages will be in the middle.
-2.Ask user to choose either player vs computer or  player 1 vs player 2 
-3.After each move an updated 3 by 3 grid will be printed.
-4.System should ask first player to enter their move
-5.If they enter a symbol other than “X” , the system should warn the user to not enter invalid symbol and let the user enter their move.
-6.(First player must use the “X” symbol all the time). First player can put their symbol in any place within the Grid for the first move !
 
 
-7. If the opponent is a computer it will pick a random space which is not taken and put “O” symbol in it or the system would ask second player to enter their move
-8.If the second player enters a symbol other than “O” , the system should warn the user to not enter invalid symbol and let the user enter their move.
-9. Second player can put their symbol in any place within the Grid if the place is not taken by either fist player or second player.
-10.System should ask first player to enter their move
-11.If they enter a symbol other than “X” , the system should warn the user to not enter invalid symbol and let the user enter their move.
-12.First player can put their symbol in any place within the Grid if the place is not taken by either first player or second player.
 
-13. The game should continue with the 7th step until all the places in the grid are taken. 
+Requirements Definition:
 
-14.The system should show a message containing all the places taken in the grid and Game is Over! 
+1. Greeting messages will be displayed in the middle of the screen.
 
--Suggestion-
--> We can check whether first player or second player won according to their moves
-But no need to put logic to computer decisions . 
--> if the player is playing with computer , we can also check who won but the computer will not make logical movements  
+2. Computer will ask the user to choose either “Player VS Computer”, or “Player 1 VS Player 2”. 
+
+3. After each move an updated 3x3 grid will be displayed.
+
+4. Display to the user that only input can only be either “X” or “O”.
+
+5. The system should ask the first player to enter their move.
+
+6. If the first player inputs a symbol other than “X” , the system should warn the user to not enter an invalid symbol, then allow the user to input another symbol.
+
+7. First player can put their symbol in any place within the grid for the first move. (First player will be assigned the symbol “X”).
+
+8. If the opponent is a computer it will pick a random space which is not taken and place an “O” symbol in it, or the system will ask the second player to enter their move.
+
+9. If the second player enters a symbol other than “O” , the system should warn the user to not enter an invalid symbol, then allow the user to input another symbol.
+
+10. The second player can put their symbol in any place within the grid if the place is not taken by either the first player or second player.
+
+11. The system should ask the first player to enter their move.
+
+12. If they enter a symbol other than “X” , the system should warn the user to not enter invalid symbol and let the user enter their move.
+
+13. First player can put their symbol in any place within the Grid if the place is not taken by either first player or second player.
+
+14. The game should continue with the 10th step until all the places in the grid are taken. 
+
+15. The system should show a message containing all the places taken in the grid and “Game is Over!”
