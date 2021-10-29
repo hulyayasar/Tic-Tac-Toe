@@ -26,32 +26,28 @@ Tic-Tac-Toe is a classic game which can be played virtually anywhere. The game m
 
 Requirements Definition:
 
-1. Greeting messages will be displayed in the middle of the screen.
+1. Greeting messages will be displayed in the middle of the screen
 
-2. Computer will ask the user to choose either “Player VS Computer”, or “Player 1 VS Player 2”. 
+2. A “Player VS Computer” button will initiate a game between a person and computer
 
-3. After each move an updated 3x3 grid will be displayed.
+3. A “Player 1 VS Player 2” button will initiate a game between two distinct players
 
-4. Display to the user that only input can only be either “X” or “O”.
+4. After each move an updated 3 x 3 grid will be displayed
 
-5. The system should ask the first player to enter their move.
+5. Display to the user that only inputs can only be either “X” or “O”
 
-6. If the first player inputs a symbol other than “X” , the system should warn the user to not enter an invalid symbol, then allow the user to input another symbol.
+6. If a player inputs a symbol other than “X” or “O” , the system will warn the user not to enter an invalid symbol, and will ask them to input another symbol
 
-7. First player can put their symbol in any place within the grid for the first move. (First player will be assigned the symbol “X”).
+7. If user selects “Player VS Computer”, then Player is “X” and Computer is “O”, if user selects “Player 1 VS Player 2” then Player 1 is “X” and Player 2 is “O”
 
-8. If the opponent is a computer it will pick a random space which is not taken and place an “O” symbol in it, or the system will ask the second player to enter their move.
+8. If the opponent is a computer, the computer will choose a random space which is not taken by Player 1 and place an “O”
 
-9. If the second player enters a symbol other than “O” , the system should warn the user to not enter an invalid symbol, then allow the user to input another symbol.
+9. After each turn the system will output a message stating whos turn it is accordingly
 
-10. The second player can put their symbol in any place within the grid if the place is not taken by either the first player or second player.
+10. All spaces on the grid must be occupied by either an “X” or “O” respectively before the game can be finished
 
-11. The system should ask the first player to enter their move.
+11. The system will display a message stating “Game is Over!” and a winner accordingly or a tie
 
-12. If they enter a symbol other than “X” , the system should warn the user to not enter invalid symbol and let the user enter their move.
+12. A “Home” button is available to the user to exit a game that may be taking place and return to the main menu
 
-13. First player can put their symbol in any place within the Grid if the place is not taken by either first player or second player.
-
-14. The game should continue with the 10th step until all the places in the grid are taken. 
-
-15. The system should show a message containing all the places taken in the grid and “Game is Over!”
+13. A “How to Play” button is available for user to view rules of Tic-Tac-Toe and how to play
