@@ -52,8 +52,12 @@ Requirements Definition:
 
 13. A “How to Play” button is available for user to view rules of Tic-Tac-Toe and how to play
 
+WIREFRAMES:
+
 
 ![WIREFRAME NAVIGATION](https://user-images.githubusercontent.com/60611662/140621355-82b089ca-d530-442f-8e20-881d35762545.jpeg)
+
+
 
 
 ![Creators Page](https://user-images.githubusercontent.com/60611662/140621375-d74d6ce9-e973-4208-abdb-95c7301b2621.png)
