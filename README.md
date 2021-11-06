@@ -51,3 +51,6 @@ Requirements Definition:
 12. A “Home” button is available to the user to exit a game that may be taking place and return to the main menu
 
 13. A “How to Play” button is available for user to view rules of Tic-Tac-Toe and how to play
+
+
+![WIREFRAME NAVIGATION](https://user-images.githubusercontent.com/60611662/140621355-82b089ca-d530-442f-8e20-881d35762545.jpeg)
