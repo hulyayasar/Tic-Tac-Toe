@@ -1,0 +1,109 @@
+.content{
+    border: solid wheat;
+    background-color: ivory;
+}
+
+body{
+   /* background-image: url("images/paper.png");*/
+   background-color: wheat;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Arial, sans-serif;
+}
+header{
+    background-color: rgb(216, 216, 225);
+    border:solid white;
+    text-align:center;
+}
+
+h1{
+    color: #7352eb;
+}
+
+section{
+    border:solid ;
+    border-color: rgb(216, 216, 225);
+    background-color: rgb(236, 236, 245);
+    margin-top: 10px;
+    padding: 15px;
+    overflow: auto;
+}
+
+img{
+    float: right;
+    
+}
+
+aside{
+    float: right;
+    border:solid ;
+    border-color: rgb(216, 216, 225);
+    background-color: rgb(236, 236, 245);
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 750px;
+    padding: 15px;
+}
+/*
+p{
+ border-style: solid;
+    border-width: thin;
+    border-color: gray; 
+}
+*/
+
+footer{
+    /*border: solid magenta;*/
+    text-align: center;
+}
+/* p{
+    font-size: 150%;
+}
+a{
+    font-size: 200%;
+} */
+.block:hover {
+    background-color: rgb(188, 163, 211);
+    color: black;
+  }
+  .block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #7352eb;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .Instruction{
+      color: #7352eb;
+  }
+  
+  button{
+    display:block;
+    border:solid ;
+    border-color: rgb(216, 216, 225);
+    background-color: rgb(236, 236, 245);
+    margin-top: 10px;
+    padding: 15px;
+    overflow: auto;
+    width: 100%;
+  }
+  .button:hover{
+      background-color: rgb(188, 163, 211);
+      color: black;
+  }
+
+  #creator{
+    display:block;
+    border:solid ;
+    border-color: rgb(216, 216, 225);
+    background-color: rgb(236, 236, 245);
+    margin-top: 10px;
+    padding: 15px;
+    overflow: auto;
+    width: 100%;
+  }
