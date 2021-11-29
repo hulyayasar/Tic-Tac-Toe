@@ -1,0 +1,19 @@
+/* GRID */
+
+#spot1, #spot2, #spot3, #spot4, #spot5, #spot6, #spot7, #spot8, #spot9 {
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid red;
+    width: 70px;
+    height: 60px;
+    font-size:25px;
+    margin:auto;
+}
+
+#board{
+    text-align: center;
+}
+
+body{
+    background-color: darkslategray;
+}
