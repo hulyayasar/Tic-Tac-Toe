@@ -1,0 +1,21 @@
+#cell1, #cell2, #cell3, #cell4, #cell5, #cell6, #cell7, #cell8, #cell9 {
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid red;
+    width: 70px;
+    height: 60px;
+    font-size:25px;
+    margin:auto;
+    
+}
+
+#board{
+    text-align: center;
+}
+
+body{
+    background-color: darkslategray;
+}
+/*p{
+    display: inline;
+}*/
