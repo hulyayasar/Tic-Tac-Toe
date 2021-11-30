@@ -10,15 +10,13 @@ var a ,b;
 
 
 
-
-
 function cell1(){
 
     counter++;
     a =0, b=0;
 
     if(counter % 2 != 0){
-        
+
         document.getElementById("cell1").value =  "X";
 
        console.log("X");
@@ -30,12 +28,13 @@ function cell1(){
     }
 
 
+
     if(checkIfWin(a,b)){
         console.log("You Winn!!");
         alert("You Winn!!");
     }
 
-   
+
     
 }
 function cell2(){
@@ -43,6 +42,7 @@ function cell2(){
     a =0, b=1;
 
     if(counter % 2 != 0){
+
        document.getElementById("cell2").value =  "X";
        board[a][b]=1;
        console.log("X");
@@ -68,7 +68,7 @@ function cell3(){
     a =0, b=2;
 
     if(counter % 2 != 0){
-       
+
        document.getElementById("cell3").value =  "X";
        board[a][b]=1;
        console.log("X");
@@ -91,7 +91,7 @@ function cell4(){
     a =1, b=0;
 
     if(counter % 2 != 0){
-       
+
         document.getElementById("cell4").value =  "X";
        board[a][b]=1;
        console.log("X");
@@ -114,7 +114,7 @@ function cell5(){
     a =1, b=1;
 
     if(counter % 2 != 0){
-        
+
        document.getElementById("cell5").value =  "X";
 
        board[a][b]=1;
@@ -141,7 +141,7 @@ function cell6(){
     a =1, b=2;
 
     if(counter % 2 != 0){
-        
+
        document.getElementById("cell6").value =  "X";
        board[a][b]=1;
        console.log("X");
@@ -166,7 +166,6 @@ function cell7(){
     a =2, b=0;
 
     if(counter % 2 != 0){
-        
         document.getElementById("cell7").value =  "X";
        board[a][b]=1;
        console.log("X");
@@ -192,7 +191,7 @@ function cell8(){
     a =2, b=1;
 
     if(counter % 2 != 0){
-        
+
        document.getElementById("cell8").value =  "X";
        board[a][b]=1;
        console.log("X");
@@ -216,12 +215,15 @@ function cell9(){
     a =2, b=2;
 
     if(counter % 2 != 0){
+
        
          document.getElementById("cell9").value = "X";
+
        board[a][b]=1;
        console.log("X");
     }else{
         document.getElementById("cell9").value = "O";
+
         board[a][b]=2;
         console.log("O");
     }

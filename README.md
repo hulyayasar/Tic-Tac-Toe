@@ -3,11 +3,8 @@ Team Name:	Amigos
 Team Members:
 
 Gurtaj Dhindsa: dhindsag@my.yorku.ca EECS 1012 Section B Lab 01
- 
-Pallob Ghosh : Pallob07@my.yorku.ca EECS 1012 Section B Lab 01
 
 Hulya Yasar hulya00@my.yorku.ca EECS 1012 Section B Lab 01 
-
 
 
 
