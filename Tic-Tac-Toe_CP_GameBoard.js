@@ -1,13 +1,58 @@
-
-
 var board = [[0,0,0],
             [0,0,0],
             [0,0,0]];
 
 var counter = 0 ;
 var a ,b;
+var randomC,randomR;
 
 
+function computerTurn(){
+
+    do{
+        randomC = Math.random(3);
+        randomR = Math.random(3);
+
+    }while(board[randomC][randomR] != 0)
+    
+    board[randomC][randomR] = 2;
+    counter++;
+
+    if(randomC == 0){
+        if(randomR == 0){
+            document.getElementById("cell1").value =   "O";
+        }
+        else if(randomR == 1){
+            document.getElementById("cell2").value =   "O";
+        }
+        else if(randomR == 2){
+            document.getElementById("cell3").value =   "O";
+        }
+    }
+    else if(randomC == 1){
+        if(randomR == 0){
+            document.getElementById("cell4").value =   "O";
+        }
+        else if(randomR == 1){
+            document.getElementById("cell5").value =   "O";
+        }
+        else if(randomR == 2){
+            document.getElementById("cell6").value =   "O";
+        }
+    }
+    else if(randomC == 2){
+        if(randomR == 0){
+            document.getElementById("cell7").value =   "O";
+        }
+        else if(randomR == 1){
+            document.getElementById("cell8").value =   "O";
+        }
+        else if(randomR == 2){
+            document.getElementById("cell9").value =   "O";
+        }
+    }
+    
+}
 
 
 function cell1(){
@@ -16,17 +61,12 @@ function cell1(){
     a =0, b=0;
 
     if(counter % 2 != 0){
-
+       
         document.getElementById("cell1").value =  "X";
 
        console.log("X");
        board[a][b]=1;
-    }else{
-        document.getElementById("cell1").value =   "O";
-        console.log("O");
-        board[a][b]=2;
     }
-
 
 
     if(checkIfWin(a,b)){
@@ -35,6 +75,12 @@ function cell1(){
     }
 
 
+    computerTurn();
+
+    if(checkIfWin(a,b)){
+        console.log("You Winn!!");
+        alert("You Winn!!");
+    }
     
 }
 function cell2(){
@@ -42,18 +88,19 @@ function cell2(){
     a =0, b=1;
 
     if(counter % 2 != 0){
-
        document.getElementById("cell2").value =  "X";
        board[a][b]=1;
        console.log("X");
-    }else{
-        document.getElementById("cell2").value =   "O";
-        console.log("O");
-        board[a][b]=2;
     }
 
-
     
+
+    if(checkIfWin(a,b)){
+        console.log("You Winn!!");
+        alert("You Winn!!");
+    }
+
+    computerTurn();
 
     if(checkIfWin(a,b)){
         console.log("You Winn!!");
@@ -68,16 +115,18 @@ function cell3(){
     a =0, b=2;
 
     if(counter % 2 != 0){
-
+       
        document.getElementById("cell3").value =  "X";
        board[a][b]=1;
        console.log("X");
-    }else{
-        document.getElementById("cell3").value =   "O";
-        board[a][b]=2;
-        console.log("O");
     }
 
+    if(checkIfWin(a,b)){
+        console.log("You Winn!!");
+        alert("You Winn!!");
+    }
+
+    computerTurn();
 
     if(checkIfWin(a,b)){
         console.log("You Winn!!");
@@ -91,17 +140,18 @@ function cell4(){
     a =1, b=0;
 
     if(counter % 2 != 0){
-
         document.getElementById("cell4").value =  "X";
        board[a][b]=1;
        console.log("X");
-    }else{
-        document.getElementById("cell4").value =   "O";
-        board[a][b]=2;
-        console.log("O");
+    }
+ 
+    if(checkIfWin(a,b)){
+        console.log("You Winn!!");
+        alert("You Winn!!");
     }
 
- 
+    computerTurn();
+
     if(checkIfWin(a,b)){
         console.log("You Winn!!");
         alert("You Winn!!");
@@ -114,18 +164,17 @@ function cell5(){
     a =1, b=1;
 
     if(counter % 2 != 0){
-
        document.getElementById("cell5").value =  "X";
 
        board[a][b]=1;
        console.log("X");
-    }else{
-        document.getElementById("cell5").value =   "O";
-        board[a][b]=2;
-        console.log("O");
     }
 
-
+    if(checkIfWin(a,b)){
+        console.log("You Winn!!");
+        alert("You Winn!!");
+    }
+    computerTurn();
 
     if(checkIfWin(a,b)){
         console.log("You Winn!!");
@@ -141,17 +190,19 @@ function cell6(){
     a =1, b=2;
 
     if(counter % 2 != 0){
-
+       
        document.getElementById("cell6").value =  "X";
        board[a][b]=1;
        console.log("X");
-    }else{
-        document.getElementById("cell6").value =   "O";
-        board[a][b]=2;
-        console.log("O");
     }
 
     
+
+    if(checkIfWin(a,b)){
+        console.log("You Winn!!");
+        alert("You Winn!!");
+    }
+    computerTurn();
 
     if(checkIfWin(a,b)){
         console.log("You Winn!!");
@@ -166,13 +217,10 @@ function cell7(){
     a =2, b=0;
 
     if(counter % 2 != 0){
+       
         document.getElementById("cell7").value =  "X";
        board[a][b]=1;
        console.log("X");
-    }else{
-        document.getElementById("cell7").value =   "O";
-        board[a][b]=2;
-        console.log("O");
     }
 
    
@@ -182,6 +230,12 @@ function cell7(){
         alert("You Winn!!");
     }
    
+    computerTurn();
+
+    if(checkIfWin(a,b)){
+        console.log("You Winn!!");
+        alert("You Winn!!");
+    }
     
 
 }
@@ -191,17 +245,19 @@ function cell8(){
     a =2, b=1;
 
     if(counter % 2 != 0){
-
+       
        document.getElementById("cell8").value =  "X";
        board[a][b]=1;
        console.log("X");
-    }else{
-        document.getElementsById("cell8").value =   "O";
-        board[a][b]=2;
-        console.log("O");
     }
 
  
+
+    if(checkIfWin(a,b)){
+        console.log("You Winn!!");
+        alert("You Winn!!");
+    }
+    computerTurn();
 
     if(checkIfWin(a,b)){
         console.log("You Winn!!");
@@ -215,16 +271,13 @@ function cell9(){
     a =2, b=2;
 
     if(counter % 2 != 0){
-
        
          document.getElementById("cell9").value = "X";
-
-       board[a][b]=1;
+     board[a][b]=1;
        console.log("X");
     }else{
         document.getElementById("cell9").value = "O";
-
-        board[a][b]=2;
+      board[a][b]=2;
         console.log("O");
     }
 
@@ -234,7 +287,12 @@ function cell9(){
         console.log("You Winn!!");
         alert("You Winn!!");
     }
-   
+    computerTurn();
+
+    if(checkIfWin(a,b)){
+        console.log("You Winn!!");
+        alert("You Winn!!");
+    }
    
 
 
