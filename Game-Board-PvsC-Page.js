@@ -10,8 +10,11 @@ var randomC,randomR;
 function computerTurn(){
 
     do{
-        randomC = Math.random(3);
-        randomR = Math.random(3);
+        
+        randomC = Math.floor(Math.random()*3);
+        console.log(randomC);
+        randomR = Math.floor(Math.random()*3);
+        console.log(randomR);
 
     }while(board[randomC][randomR] != 0)
     
@@ -21,34 +24,43 @@ function computerTurn(){
     if(randomC == 0){
         if(randomR == 0){
             document.getElementById("cell1").value =   "O";
+            document.getElementById('cell1').onclick = null;
         }
         else if(randomR == 1){
             document.getElementById("cell2").value =   "O";
+            document.getElementById('cell2').onclick = null;
         }
         else if(randomR == 2){
             document.getElementById("cell3").value =   "O";
+            document.getElementById('cell3').onclick = null;
         }
     }
     else if(randomC == 1){
         if(randomR == 0){
             document.getElementById("cell4").value =   "O";
+            document.getElementById('cell4').onclick = null;
         }
         else if(randomR == 1){
             document.getElementById("cell5").value =   "O";
+            document.getElementById('cell5').onclick = null;
         }
         else if(randomR == 2){
             document.getElementById("cell6").value =   "O";
+            document.getElementById('cell6').onclick = null;
         }
     }
     else if(randomC == 2){
         if(randomR == 0){
             document.getElementById("cell7").value =   "O";
+            document.getElementById('cell7').onclick = null;
         }
         else if(randomR == 1){
             document.getElementById("cell8").value =   "O";
+            document.getElementById('cell8').onclick = null;
         }
         else if(randomR == 2){
             document.getElementById("cell9").value =   "O";
+            document.getElementById('cell9').onclick = null;
         }
     }
     
@@ -63,14 +75,15 @@ function cell1(){
     if(counter % 2 != 0){
        
         document.getElementById("cell1").value =  "X";
+        document.getElementById('cell1').onclick = null;
 
-       console.log("X");
+      
        board[a][b]=1;
     }
 
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
 
@@ -78,7 +91,7 @@ function cell1(){
     computerTurn();
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
     
@@ -89,23 +102,28 @@ function cell2(){
 
     if(counter % 2 != 0){
        document.getElementById("cell2").value =  "X";
+       document.getElementById('cell2').onclick = null;
        board[a][b]=1;
-       console.log("X");
+       
     }
 
     
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+       
         alert("You Winn!!");
     }
+    else{
 
-    computerTurn();
+        computerTurn();
 
-    if(checkIfWin(a,b)){
-        console.log("You Winn!!");
-        alert("You Winn!!");
+        if(checkIfWin(a,b)){
+            
+            alert("You Winn!!");
+        }
     }
+
+   
    
     
 }
@@ -117,22 +135,27 @@ function cell3(){
     if(counter % 2 != 0){
        
        document.getElementById("cell3").value =  "X";
+       document.getElementById('cell3').onclick = null;
        board[a][b]=1;
-       console.log("X");
+       
     }
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
-
-    computerTurn();
+    else{
+        computerTurn();
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
    
+
+    }
+
+    
 }
 
 function cell4(){
@@ -141,21 +164,26 @@ function cell4(){
 
     if(counter % 2 != 0){
         document.getElementById("cell4").value =  "X";
+        document.getElementById('cell4').onclick = null;
        board[a][b]=1;
-       console.log("X");
+       
     }
  
     if(checkIfWin(a,b)){
         console.log("You Winn!!");
         alert("You Winn!!");
     }
+    else{
 
-    computerTurn();
+        computerTurn();
 
-    if(checkIfWin(a,b)){
-        console.log("You Winn!!");
-        alert("You Winn!!");
+        if(checkIfWin(a,b)){
+            
+            alert("You Winn!!");
+        }
     }
+
+   
    
 }
 
@@ -165,22 +193,26 @@ function cell5(){
 
     if(counter % 2 != 0){
        document.getElementById("cell5").value =  "X";
+       document.getElementById('cell5').onclick = null;
 
        board[a][b]=1;
-       console.log("X");
-    }
+    }   
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
-    computerTurn();
+    else{
+
+        computerTurn();
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
    
+    }
+    
    
     
 }
@@ -192,23 +224,29 @@ function cell6(){
     if(counter % 2 != 0){
        
        document.getElementById("cell6").value =  "X";
+       document.getElementById('cell6').onclick = null;
+
        board[a][b]=1;
-       console.log("X");
+       
     }
 
     
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
-    computerTurn();
+    else{
+
+        computerTurn();
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
    
+    }
+    
     
 }
 
@@ -219,23 +257,29 @@ function cell7(){
     if(counter % 2 != 0){
        
         document.getElementById("cell7").value =  "X";
+        document.getElementById('cell7').onclick = null;
        board[a][b]=1;
-       console.log("X");
+       
     }
 
    
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
-   
-    computerTurn();
+
+    else{
+        computerTurn();
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
+
+    }
+   
+    
     
 
 }
@@ -247,23 +291,27 @@ function cell8(){
     if(counter % 2 != 0){
        
        document.getElementById("cell8").value =  "X";
+       document.getElementById('cell8').onclick = null;
        board[a][b]=1;
-       console.log("X");
+       
     }
-
  
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
-    computerTurn();
+    else{
+
+        computerTurn();
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
    
+    }
+    
     
 }
 function cell9(){
@@ -273,26 +321,27 @@ function cell9(){
     if(counter % 2 != 0){
        
          document.getElementById("cell9").value = "X";
+         document.getElementById('cell9').onclick = null;
      board[a][b]=1;
-       console.log("X");
-    }else{
-        document.getElementById("cell9").value = "O";
-      board[a][b]=2;
-        console.log("O");
+       
     }
 
    
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
-    computerTurn();
+    else{
 
-    if(checkIfWin(a,b)){
-        console.log("You Winn!!");
-        alert("You Winn!!");
+        computerTurn();
+
+        if(checkIfWin(a,b)){
+            
+            alert("You Winn!!");
+        }
     }
+   
    
 
 
@@ -404,7 +453,24 @@ function checkIfWin(a,b){
     }
     if( flag1 == 3  || flag2 == 3 ){
         return true;
-    }else{
+    }
+    flag1 = 0;
+    flag2 = 0;
+    for ( i = 0,j=2; i<3; i++,j--) {
+       
+        
+            if(board[i][j]==1){
+                flag1 ++ ;
+            } 
+            if(board[i][j]==2){
+               flag2 ++ ;
+            } 
+        
+    }
+    if( flag1 == 3  || flag2 == 3 ){
+        return true;
+    }
+    else{
         return false;
     }
     
