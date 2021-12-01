@@ -107,3 +107,13 @@ a{
     overflow: auto;
     width: 100%;
   }
+
+  .exit:hover {
+    background-color: rgb(241, 30, 40);
+    color: black;
+  }
+  
+  .block:hover {
+    background-color: rgb(188, 163, 211);
+    color: black;
+  }

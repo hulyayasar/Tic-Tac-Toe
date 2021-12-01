@@ -18,19 +18,19 @@ function cell1(){
     if(counter % 2 != 0){
 
         document.getElementById("cell1").value =  "X";
+        document.getElementById('cell1').onclick = null;
 
-       console.log("X");
        board[a][b]=1;
     }else{
         document.getElementById("cell1").value =   "O";
-        console.log("O");
+        document.getElementById('cell1').onclick = null;
+        
         board[a][b]=2;
     }
 
 
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
         alert("You Winn!!");
     }
 
@@ -44,11 +44,14 @@ function cell2(){
     if(counter % 2 != 0){
 
        document.getElementById("cell2").value =  "X";
+       document.getElementById('cell2').onclick = null;
+
        board[a][b]=1;
-       console.log("X");
+    
     }else{
         document.getElementById("cell2").value =   "O";
-        console.log("O");
+        document.getElementById('cell2').onclick = null;
+        
         board[a][b]=2;
     }
 
@@ -56,7 +59,7 @@ function cell2(){
     
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
    
@@ -70,17 +73,20 @@ function cell3(){
     if(counter % 2 != 0){
 
        document.getElementById("cell3").value =  "X";
+       document.getElementById('cell3').onclick = null;
+
        board[a][b]=1;
-       console.log("X");
+      
     }else{
         document.getElementById("cell3").value =   "O";
+        document.getElementById('cell3').onclick = null;
+
         board[a][b]=2;
-        console.log("O");
+        
     }
 
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
         alert("You Winn!!");
     }
    
@@ -93,17 +99,20 @@ function cell4(){
     if(counter % 2 != 0){
 
         document.getElementById("cell4").value =  "X";
+        document.getElementById('cell4').onclick = null;
+        
        board[a][b]=1;
-       console.log("X");
+       
     }else{
         document.getElementById("cell4").value =   "O";
+        document.getElementById('cell4').onclick = null;
+
         board[a][b]=2;
-        console.log("O");
     }
 
  
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
    
@@ -116,19 +125,22 @@ function cell5(){
     if(counter % 2 != 0){
 
        document.getElementById("cell5").value =  "X";
+       document.getElementById('cell5').onclick = null;
 
        board[a][b]=1;
-       console.log("X");
+      
     }else{
         document.getElementById("cell5").value =   "O";
+        document.getElementById('cell5').onclick = null;
+
         board[a][b]=2;
-        console.log("O");
+       
     }
 
 
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
    
@@ -143,18 +155,22 @@ function cell6(){
     if(counter % 2 != 0){
 
        document.getElementById("cell6").value =  "X";
+       document.getElementById('cell6').onclick = null;
+
        board[a][b]=1;
-       console.log("X");
+       
     }else{
         document.getElementById("cell6").value =   "O";
+        document.getElementById('cell6').onclick = null;
+
         board[a][b]=2;
-        console.log("O");
+        
     }
 
     
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
    
@@ -167,18 +183,22 @@ function cell7(){
 
     if(counter % 2 != 0){
         document.getElementById("cell7").value =  "X";
+        document.getElementById('cell7').onclick = null;
+
        board[a][b]=1;
-       console.log("X");
+       
     }else{
         document.getElementById("cell7").value =   "O";
+        document.getElementById('cell7').onclick = null;
+
         board[a][b]=2;
-        console.log("O");
+       
     }
 
    
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
    
@@ -193,18 +213,22 @@ function cell8(){
     if(counter % 2 != 0){
 
        document.getElementById("cell8").value =  "X";
+       document.getElementById('cell8').onclick = null;
+
        board[a][b]=1;
-       console.log("X");
+       
     }else{
-        document.getElementsById("cell8").value =   "O";
+        document.getElementById("cell8").value =   "O";
+        document.getElementById('cell8').onclick = null;
+
         board[a][b]=2;
-        console.log("O");
+        
     }
 
  
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+        
         alert("You Winn!!");
     }
    
@@ -218,20 +242,22 @@ function cell9(){
 
        
          document.getElementById("cell9").value = "X";
+         document.getElementById('cell9').onclick = null;
 
        board[a][b]=1;
-       console.log("X");
+       
     }else{
         document.getElementById("cell9").value = "O";
+        document.getElementById('cell9').onclick = null;
 
         board[a][b]=2;
-        console.log("O");
+       
     }
 
    
 
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+       
         alert("You Winn!!");
     }
    
@@ -340,9 +366,26 @@ function checkIfWin(a,b){
         if(board[k][k]==1){
             flag1 ++ ;
         } 
-        if(board[2][j]==2){
+        if(board[k][k]==2){
             flag2 ++ ;
         } 
+    }
+    if( flag1 == 3  || flag2 == 3 ){
+        return true;
+    }
+
+    flag1 = 0;
+    flag2 = 0;
+    for ( i = 0,j=2; i<3; i++,j--) {
+       
+        
+            if(board[i][j]==1){
+                flag1 ++ ;
+            } 
+            if(board[i][j]==2){
+               flag2 ++ ;
+            } 
+        
     }
     if( flag1 == 3  || flag2 == 3 ){
         return true;
