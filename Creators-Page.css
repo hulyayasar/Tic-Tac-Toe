@@ -106,4 +106,22 @@ a{
     padding: 15px;
     overflow: auto;
     width: 100%;
+    color: #7352eb;
+
+    
+  }
+
+  .exit:hover {
+    background-color: rgb(241, 30, 40);
+    color: black;
+  }
+  
+  .block:hover {
+    background-color: rgb(188, 163, 211);
+    color: black;
+  }
+
+  h2{
+    color: #7352eb;
+
   }
