@@ -5,7 +5,9 @@
     width: 200px;
     height: 200px;
     font-size:25px;
+
     margin:auto;   
+
 }
 
 #board{
@@ -25,7 +27,9 @@ body{
     background-color: rgb(188, 163, 211);
     color: black;
   }
+
   
   h1{
     color: #7352eb;
   }
+
