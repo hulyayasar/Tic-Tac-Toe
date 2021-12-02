@@ -25,42 +25,76 @@ function computerTurn(){
         if(randomR == 0){
             document.getElementById("cell1").value =   "O";
             document.getElementById('cell1').onclick = null;
+
+            document.getElementById("cell1").disabled = true;
+
+
         }
         else if(randomR == 1){
             document.getElementById("cell2").value =   "O";
             document.getElementById('cell2').onclick = null;
+
+            document.getElementById("cell2").disabled = true;
+
+
         }
         else if(randomR == 2){
             document.getElementById("cell3").value =   "O";
             document.getElementById('cell3').onclick = null;
+
+            document.getElementById("cell3").disabled = true;
+
+
         }
     }
     else if(randomC == 1){
         if(randomR == 0){
             document.getElementById("cell4").value =   "O";
             document.getElementById('cell4').onclick = null;
+
+            document.getElementById("cell4").disabled = true;
+
+
         }
         else if(randomR == 1){
             document.getElementById("cell5").value =   "O";
             document.getElementById('cell5').onclick = null;
+
+            document.getElementById("cell5").disabled = true;
+
+
         }
         else if(randomR == 2){
             document.getElementById("cell6").value =   "O";
             document.getElementById('cell6').onclick = null;
+
+            document.getElementById("cell6").disabled = true;
+
+
         }
     }
     else if(randomC == 2){
         if(randomR == 0){
             document.getElementById("cell7").value =   "O";
             document.getElementById('cell7').onclick = null;
+
+            document.getElementById("cell7").disabled = true;
+
         }
         else if(randomR == 1){
             document.getElementById("cell8").value =   "O";
             document.getElementById('cell8').onclick = null;
+
+            document.getElementById("cell8").disabled = true;
+
         }
         else if(randomR == 2){
             document.getElementById("cell9").value =   "O";
             document.getElementById('cell9').onclick = null;
+
+            document.getElementById("cell9").disabled = true;
+
+
         }
     }
     
@@ -77,6 +111,9 @@ function cell1(){
         document.getElementById("cell1").value =  "X";
         document.getElementById('cell1').onclick = null;
 
+        document.getElementById("cell1").disabled = true;
+
+
       
        board[a][b]=1;
     }
@@ -85,6 +122,18 @@ function cell1(){
     if(checkIfWin(a,b)){
         
         alert("You Winn!!");
+
+        document.getElementById("cell1").disabled = true;
+        document.getElementById("cell2").disabled = true;
+        document.getElementById("cell3").disabled = true;
+        document.getElementById("cell4").disabled = true;
+        document.getElementById("cell5").disabled = true;
+        document.getElementById("cell6").disabled = true;
+        document.getElementById("cell7").disabled = true;
+        document.getElementById("cell8").disabled = true;
+        document.getElementById("cell9").disabled = true;
+
+
     }
 
 
@@ -92,7 +141,18 @@ function cell1(){
 
     if(checkIfWin(a,b)){
         
-        alert("You Winn!!");
+
+        alert("Computer Winn!!");
+        document.getElementById("cell1").disabled = true;
+        document.getElementById("cell2").disabled = true;
+        document.getElementById("cell3").disabled = true;
+        document.getElementById("cell4").disabled = true;
+        document.getElementById("cell5").disabled = true;
+        document.getElementById("cell6").disabled = true;
+        document.getElementById("cell7").disabled = true;
+        document.getElementById("cell8").disabled = true;
+        document.getElementById("cell9").disabled = true;
+
     }
     
 }
@@ -103,6 +163,10 @@ function cell2(){
     if(counter % 2 != 0){
        document.getElementById("cell2").value =  "X";
        document.getElementById('cell2').onclick = null;
+
+       document.getElementById("cell2").disabled = true;
+
+
        board[a][b]=1;
        
     }
@@ -112,6 +176,17 @@ function cell2(){
     if(checkIfWin(a,b)){
        
         alert("You Winn!!");
+
+        document.getElementById("cell1").disabled = true;
+        document.getElementById("cell2").disabled = true;
+        document.getElementById("cell3").disabled = true;
+        document.getElementById("cell4").disabled = true;
+        document.getElementById("cell5").disabled = true;
+        document.getElementById("cell6").disabled = true;
+        document.getElementById("cell7").disabled = true;
+        document.getElementById("cell8").disabled = true;
+        document.getElementById("cell9").disabled = true;
+
     }
     else{
 
@@ -119,7 +194,18 @@ function cell2(){
 
         if(checkIfWin(a,b)){
             
-            alert("You Winn!!");
+
+            alert("Computer Winn!!");
+            document.getElementById("cell1").disabled = true;
+            document.getElementById("cell2").disabled = true;
+            document.getElementById("cell3").disabled = true;
+            document.getElementById("cell4").disabled = true;
+            document.getElementById("cell5").disabled = true;
+            document.getElementById("cell6").disabled = true;
+            document.getElementById("cell7").disabled = true;
+            document.getElementById("cell8").disabled = true;
+            document.getElementById("cell9").disabled = true;
+
         }
     }
 
@@ -136,6 +222,10 @@ function cell3(){
        
        document.getElementById("cell3").value =  "X";
        document.getElementById('cell3').onclick = null;
+
+       document.getElementById("cell3").disabled = true;
+
+
        board[a][b]=1;
        
     }
@@ -143,13 +233,35 @@ function cell3(){
     if(checkIfWin(a,b)){
         
         alert("You Winn!!");
+
+        document.getElementById("cell1").disabled = true;
+        document.getElementById("cell2").disabled = true;
+        document.getElementById("cell3").disabled = true;
+        document.getElementById("cell4").disabled = true;
+        document.getElementById("cell5").disabled = true;
+        document.getElementById("cell6").disabled = true;
+        document.getElementById("cell7").disabled = true;
+        document.getElementById("cell8").disabled = true;
+        document.getElementById("cell9").disabled = true;
+
     }
     else{
         computerTurn();
 
     if(checkIfWin(a,b)){
         
-        alert("You Winn!!");
+
+        alert("Computer Winn!!");
+        document.getElementById("cell1").disabled = true;
+        document.getElementById("cell2").disabled = true;
+        document.getElementById("cell3").disabled = true;
+        document.getElementById("cell4").disabled = true;
+        document.getElementById("cell5").disabled = true;
+        document.getElementById("cell6").disabled = true;
+        document.getElementById("cell7").disabled = true;
+        document.getElementById("cell8").disabled = true;
+        document.getElementById("cell9").disabled = true;
+
     }
    
 
@@ -165,13 +277,27 @@ function cell4(){
     if(counter % 2 != 0){
         document.getElementById("cell4").value =  "X";
         document.getElementById('cell4').onclick = null;
+
+        document.getElementById("cell4").disabled = true;
+
+
        board[a][b]=1;
        
     }
  
     if(checkIfWin(a,b)){
-        console.log("You Winn!!");
+
         alert("You Winn!!");
+        document.getElementById("cell1").disabled = true;
+        document.getElementById("cell2").disabled = true;
+        document.getElementById("cell3").disabled = true;
+        document.getElementById("cell4").disabled = true;
+        document.getElementById("cell5").disabled = true;
+        document.getElementById("cell6").disabled = true;
+        document.getElementById("cell7").disabled = true;
+        document.getElementById("cell8").disabled = true;
+        document.getElementById("cell9").disabled = true;
+
     }
     else{
 
@@ -179,7 +305,18 @@ function cell4(){
 
         if(checkIfWin(a,b)){
             
-            alert("You Winn!!");
+
+            alert("Computer Winn!!");
+            document.getElementById("cell1").disabled = true;
+            document.getElementById("cell2").disabled = true;
+            document.getElementById("cell3").disabled = true;
+            document.getElementById("cell4").disabled = true;
+            document.getElementById("cell5").disabled = true;
+            document.getElementById("cell6").disabled = true;
+            document.getElementById("cell7").disabled = true;
+            document.getElementById("cell8").disabled = true;
+            document.getElementById("cell9").disabled = true;
+
         }
     }
 
@@ -195,12 +332,27 @@ function cell5(){
        document.getElementById("cell5").value =  "X";
        document.getElementById('cell5').onclick = null;
 
+       document.getElementById("cell5").disabled = true;
+
+
+
        board[a][b]=1;
     }   
 
     if(checkIfWin(a,b)){
         
         alert("You Winn!!");
+
+        document.getElementById("cell1").disabled = true;
+        document.getElementById("cell2").disabled = true;
+        document.getElementById("cell3").disabled = true;
+        document.getElementById("cell4").disabled = true;
+        document.getElementById("cell5").disabled = true;
+        document.getElementById("cell6").disabled = true;
+        document.getElementById("cell7").disabled = true;
+        document.getElementById("cell8").disabled = true;
+        document.getElementById("cell9").disabled = true;
+
     }
     else{
 
@@ -208,7 +360,18 @@ function cell5(){
 
     if(checkIfWin(a,b)){
         
-        alert("You Winn!!");
+
+        alert("Computer Winn!!");
+        document.getElementById("cell1").disabled = true;
+        document.getElementById("cell2").disabled = true;
+        document.getElementById("cell3").disabled = true;
+        document.getElementById("cell4").disabled = true;
+        document.getElementById("cell5").disabled = true;
+        document.getElementById("cell6").disabled = true;
+        document.getElementById("cell7").disabled = true;
+        document.getElementById("cell8").disabled = true;
+        document.getElementById("cell9").disabled = true;
+
     }
    
     }
@@ -226,6 +389,9 @@ function cell6(){
        document.getElementById("cell6").value =  "X";
        document.getElementById('cell6').onclick = null;
 
+       document.getElementById("cell6").disabled = true;
+
+
        board[a][b]=1;
        
     }
@@ -235,6 +401,17 @@ function cell6(){
     if(checkIfWin(a,b)){
         
         alert("You Winn!!");
+
+        document.getElementById("cell1").disabled = true;
+        document.getElementById("cell2").disabled = true;
+        document.getElementById("cell3").disabled = true;
+        document.getElementById("cell4").disabled = true;
+        document.getElementById("cell5").disabled = true;
+        document.getElementById("cell6").disabled = true;
+        document.getElementById("cell7").disabled = true;
+        document.getElementById("cell8").disabled = true;
+        document.getElementById("cell9").disabled = true;
+
     }
     else{
 
@@ -242,7 +419,18 @@ function cell6(){
 
     if(checkIfWin(a,b)){
         
-        alert("You Winn!!");
+
+        alert("Computer Winn!!");
+        document.getElementById("cell1").disabled = true;
+        document.getElementById("cell2").disabled = true;
+        document.getElementById("cell3").disabled = true;
+        document.getElementById("cell4").disabled = true;
+        document.getElementById("cell5").disabled = true;
+        document.getElementById("cell6").disabled = true;
+        document.getElementById("cell7").disabled = true;
+        document.getElementById("cell8").disabled = true;
+        document.getElementById("cell9").disabled = true;
+
     }
    
     }
@@ -258,6 +446,10 @@ function cell7(){
        
         document.getElementById("cell7").value =  "X";
         document.getElementById('cell7').onclick = null;
+
+        document.getElementById("cell7").disabled = true;
+
+
        board[a][b]=1;
        
     }
@@ -267,6 +459,17 @@ function cell7(){
     if(checkIfWin(a,b)){
         
         alert("You Winn!!");
+
+        document.getElementById("cell1").disabled = true;
+        document.getElementById("cell2").disabled = true;
+        document.getElementById("cell3").disabled = true;
+        document.getElementById("cell4").disabled = true;
+        document.getElementById("cell5").disabled = true;
+        document.getElementById("cell6").disabled = true;
+        document.getElementById("cell7").disabled = true;
+        document.getElementById("cell8").disabled = true;
+        document.getElementById("cell9").disabled = true;
+
     }
 
     else{
@@ -274,7 +477,18 @@ function cell7(){
 
     if(checkIfWin(a,b)){
         
-        alert("You Winn!!");
+
+        alert("Computer Winn!!");
+        document.getElementById("cell1").disabled = true;
+        document.getElementById("cell2").disabled = true;
+        document.getElementById("cell3").disabled = true;
+        document.getElementById("cell4").disabled = true;
+        document.getElementById("cell5").disabled = true;
+        document.getElementById("cell6").disabled = true;
+        document.getElementById("cell7").disabled = true;
+        document.getElementById("cell8").disabled = true;
+        document.getElementById("cell9").disabled = true;
+
     }
 
     }
@@ -292,6 +506,10 @@ function cell8(){
        
        document.getElementById("cell8").value =  "X";
        document.getElementById('cell8').onclick = null;
+
+       document.getElementById("cell8").disabled = true;
+
+
        board[a][b]=1;
        
     }
@@ -300,6 +518,17 @@ function cell8(){
     if(checkIfWin(a,b)){
         
         alert("You Winn!!");
+
+        document.getElementById("cell1").disabled = true;
+        document.getElementById("cell2").disabled = true;
+        document.getElementById("cell3").disabled = true;
+        document.getElementById("cell4").disabled = true;
+        document.getElementById("cell5").disabled = true;
+        document.getElementById("cell6").disabled = true;
+        document.getElementById("cell7").disabled = true;
+        document.getElementById("cell8").disabled = true;
+        document.getElementById("cell9").disabled = true;
+
     }
     else{
 
@@ -307,7 +536,18 @@ function cell8(){
 
     if(checkIfWin(a,b)){
         
-        alert("You Winn!!");
+
+        alert("Computer Winn!!");
+        document.getElementById("cell1").disabled = true;
+        document.getElementById("cell2").disabled = true;
+        document.getElementById("cell3").disabled = true;
+        document.getElementById("cell4").disabled = true;
+        document.getElementById("cell5").disabled = true;
+        document.getElementById("cell6").disabled = true;
+        document.getElementById("cell7").disabled = true;
+        document.getElementById("cell8").disabled = true;
+        document.getElementById("cell9").disabled = true;
+
     }
    
     }
@@ -322,6 +562,10 @@ function cell9(){
        
          document.getElementById("cell9").value = "X";
          document.getElementById('cell9').onclick = null;
+
+         document.getElementById("cell9").disabled = true;
+
+
      board[a][b]=1;
        
     }
@@ -331,6 +575,17 @@ function cell9(){
     if(checkIfWin(a,b)){
         
         alert("You Winn!!");
+
+        document.getElementById("cell1").disabled = true;
+        document.getElementById("cell2").disabled = true;
+        document.getElementById("cell3").disabled = true;
+        document.getElementById("cell4").disabled = true;
+        document.getElementById("cell5").disabled = true;
+        document.getElementById("cell6").disabled = true;
+        document.getElementById("cell7").disabled = true;
+        document.getElementById("cell8").disabled = true;
+        document.getElementById("cell9").disabled = true;
+
     }
     else{
 
@@ -338,7 +593,18 @@ function cell9(){
 
         if(checkIfWin(a,b)){
             
-            alert("You Winn!!");
+
+            alert("Computer Winn!!");
+            document.getElementById("cell1").disabled = true;
+            document.getElementById("cell2").disabled = true;
+            document.getElementById("cell3").disabled = true;
+            document.getElementById("cell4").disabled = true;
+            document.getElementById("cell5").disabled = true;
+            document.getElementById("cell6").disabled = true;
+            document.getElementById("cell7").disabled = true;
+            document.getElementById("cell8").disabled = true;
+            document.getElementById("cell9").disabled = true;
+
         }
     }
    
