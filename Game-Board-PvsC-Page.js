@@ -1,3 +1,27 @@
+function cellDisable(){
+    document.getElementById("cell1").disabled = true;
+    document.getElementById("cell2").disabled = true;
+    document.getElementById("cell3").disabled = true;
+    document.getElementById("cell4").disabled = true;
+    document.getElementById("cell5").disabled = true;
+    document.getElementById("cell6").disabled = true;
+    document.getElementById("cell7").disabled = true;
+    document.getElementById("cell8").disabled = true;
+    document.getElementById("cell9").disabled = true;
+}
+function checkIfTie(){
+    var flag = true;
+    for ( i = 0; i< 3; i++) {
+        for (j = 0; j< 3; j++) {
+        
+            if(board[i][j] == 0){
+                flag=false;
+            }
+        }
+    }
+    return flag;
+
+}
 var board = [[0,0,0],
             [0,0,0],
             [0,0,0]];
@@ -119,41 +143,33 @@ function cell1(){
     }
 
 
-    if(checkIfWin(a,b)){
+    if(checkIfWin(a,b)==1){
         
         alert("You Winn!!");
 
-        document.getElementById("cell1").disabled = true;
-        document.getElementById("cell2").disabled = true;
-        document.getElementById("cell3").disabled = true;
-        document.getElementById("cell4").disabled = true;
-        document.getElementById("cell5").disabled = true;
-        document.getElementById("cell6").disabled = true;
-        document.getElementById("cell7").disabled = true;
-        document.getElementById("cell8").disabled = true;
-        document.getElementById("cell9").disabled = true;
+        cellDisable();
 
 
+    }else if(checkIfTie()){
+        alert("There is no Winner!");
     }
-
+    else{
 
     computerTurn();
 
-    if(checkIfWin(a,b)){
+    if(checkIfWin(a,b)==2){
         
 
         alert("Computer Winn!!");
-        document.getElementById("cell1").disabled = true;
-        document.getElementById("cell2").disabled = true;
-        document.getElementById("cell3").disabled = true;
-        document.getElementById("cell4").disabled = true;
-        document.getElementById("cell5").disabled = true;
-        document.getElementById("cell6").disabled = true;
-        document.getElementById("cell7").disabled = true;
-        document.getElementById("cell8").disabled = true;
-        document.getElementById("cell9").disabled = true;
+        cellDisable();
 
     }
+
+    else if(checkIfTie()){
+        alert("There is no Winner!");
+    }
+    }
+    
     
 }
 function cell2(){
@@ -173,43 +189,34 @@ function cell2(){
 
     
 
-    if(checkIfWin(a,b)){
+    if(checkIfWin(a,b)==1){
        
         alert("You Winn!!");
 
-        document.getElementById("cell1").disabled = true;
-        document.getElementById("cell2").disabled = true;
-        document.getElementById("cell3").disabled = true;
-        document.getElementById("cell4").disabled = true;
-        document.getElementById("cell5").disabled = true;
-        document.getElementById("cell6").disabled = true;
-        document.getElementById("cell7").disabled = true;
-        document.getElementById("cell8").disabled = true;
-        document.getElementById("cell9").disabled = true;
+        cellDisable();
 
+    }
+    else if(checkIfTie()){
+        alert("There is no Winner!");
     }
     else{
 
         computerTurn();
 
-        if(checkIfWin(a,b)){
+        if(checkIfWin(a,b)==2){
             
 
             alert("Computer Winn!!");
-            document.getElementById("cell1").disabled = true;
-            document.getElementById("cell2").disabled = true;
-            document.getElementById("cell3").disabled = true;
-            document.getElementById("cell4").disabled = true;
-            document.getElementById("cell5").disabled = true;
-            document.getElementById("cell6").disabled = true;
-            document.getElementById("cell7").disabled = true;
-            document.getElementById("cell8").disabled = true;
-            document.getElementById("cell9").disabled = true;
+            cellDisable();
 
+        }
+
+        else if(checkIfTie()){
+            alert("There is no Winner!");
         }
     }
 
-   
+    
    
     
 }
@@ -230,43 +237,32 @@ function cell3(){
        
     }
 
-    if(checkIfWin(a,b)){
+    if(checkIfWin(a,b)==1){
         
         alert("You Winn!!");
 
-        document.getElementById("cell1").disabled = true;
-        document.getElementById("cell2").disabled = true;
-        document.getElementById("cell3").disabled = true;
-        document.getElementById("cell4").disabled = true;
-        document.getElementById("cell5").disabled = true;
-        document.getElementById("cell6").disabled = true;
-        document.getElementById("cell7").disabled = true;
-        document.getElementById("cell8").disabled = true;
-        document.getElementById("cell9").disabled = true;
+        cellDisable();
 
+    }
+    else if(checkIfTie()){
+        alert("There is no Winner!");
     }
     else{
         computerTurn();
 
-    if(checkIfWin(a,b)){
+        if(checkIfWin(a,b)==2){
         
 
         alert("Computer Winn!!");
-        document.getElementById("cell1").disabled = true;
-        document.getElementById("cell2").disabled = true;
-        document.getElementById("cell3").disabled = true;
-        document.getElementById("cell4").disabled = true;
-        document.getElementById("cell5").disabled = true;
-        document.getElementById("cell6").disabled = true;
-        document.getElementById("cell7").disabled = true;
-        document.getElementById("cell8").disabled = true;
-        document.getElementById("cell9").disabled = true;
+        cellDisable();
+
+         }
+         else if(checkIfTie()){
+            alert("There is no Winner!");
+        }
 
     }
-   
-
-    }
-
+    
     
 }
 
@@ -285,42 +281,33 @@ function cell4(){
        
     }
  
-    if(checkIfWin(a,b)){
+    if(checkIfWin(a,b)==1){
 
         alert("You Winn!!");
-        document.getElementById("cell1").disabled = true;
-        document.getElementById("cell2").disabled = true;
-        document.getElementById("cell3").disabled = true;
-        document.getElementById("cell4").disabled = true;
-        document.getElementById("cell5").disabled = true;
-        document.getElementById("cell6").disabled = true;
-        document.getElementById("cell7").disabled = true;
-        document.getElementById("cell8").disabled = true;
-        document.getElementById("cell9").disabled = true;
+        cellDisable();
 
+    }
+    else if(checkIfTie()){
+        alert("There is no Winner!");
     }
     else{
 
         computerTurn();
 
-        if(checkIfWin(a,b)){
+        if(checkIfWin(a,b)==2){
             
 
             alert("Computer Winn!!");
-            document.getElementById("cell1").disabled = true;
-            document.getElementById("cell2").disabled = true;
-            document.getElementById("cell3").disabled = true;
-            document.getElementById("cell4").disabled = true;
-            document.getElementById("cell5").disabled = true;
-            document.getElementById("cell6").disabled = true;
-            document.getElementById("cell7").disabled = true;
-            document.getElementById("cell8").disabled = true;
-            document.getElementById("cell9").disabled = true;
+            cellDisable();
 
+        }
+
+        else if(checkIfTie()){
+            alert("There is no Winner!");
         }
     }
 
-   
+    
    
 }
 
@@ -339,39 +326,30 @@ function cell5(){
        board[a][b]=1;
     }   
 
-    if(checkIfWin(a,b)){
+    if(checkIfWin(a,b)==1){
         
         alert("You Winn!!");
 
-        document.getElementById("cell1").disabled = true;
-        document.getElementById("cell2").disabled = true;
-        document.getElementById("cell3").disabled = true;
-        document.getElementById("cell4").disabled = true;
-        document.getElementById("cell5").disabled = true;
-        document.getElementById("cell6").disabled = true;
-        document.getElementById("cell7").disabled = true;
-        document.getElementById("cell8").disabled = true;
-        document.getElementById("cell9").disabled = true;
+        cellDisable();
 
+    }
+    else if(checkIfTie()){
+        alert("There is no Winner!");
     }
     else{
 
         computerTurn();
 
-    if(checkIfWin(a,b)){
+    if(checkIfWin(a,b)==2){
         
 
         alert("Computer Winn!!");
-        document.getElementById("cell1").disabled = true;
-        document.getElementById("cell2").disabled = true;
-        document.getElementById("cell3").disabled = true;
-        document.getElementById("cell4").disabled = true;
-        document.getElementById("cell5").disabled = true;
-        document.getElementById("cell6").disabled = true;
-        document.getElementById("cell7").disabled = true;
-        document.getElementById("cell8").disabled = true;
-        document.getElementById("cell9").disabled = true;
+        cellDisable();
 
+    }
+
+    else if(checkIfTie()){
+        alert("There is no Winner!");
     }
    
     }
@@ -398,42 +376,34 @@ function cell6(){
 
     
 
-    if(checkIfWin(a,b)){
+    if(checkIfWin(a,b)==1){
         
         alert("You Winn!!");
 
-        document.getElementById("cell1").disabled = true;
-        document.getElementById("cell2").disabled = true;
-        document.getElementById("cell3").disabled = true;
-        document.getElementById("cell4").disabled = true;
-        document.getElementById("cell5").disabled = true;
-        document.getElementById("cell6").disabled = true;
-        document.getElementById("cell7").disabled = true;
-        document.getElementById("cell8").disabled = true;
-        document.getElementById("cell9").disabled = true;
+        cellDisable();
 
+    }
+    else if(checkIfTie()){
+        alert("There is no Winner!");
     }
     else{
 
         computerTurn();
 
-    if(checkIfWin(a,b)){
+    if(checkIfWin(a,b)==2){
         
 
         alert("Computer Winn!!");
-        document.getElementById("cell1").disabled = true;
-        document.getElementById("cell2").disabled = true;
-        document.getElementById("cell3").disabled = true;
-        document.getElementById("cell4").disabled = true;
-        document.getElementById("cell5").disabled = true;
-        document.getElementById("cell6").disabled = true;
-        document.getElementById("cell7").disabled = true;
-        document.getElementById("cell8").disabled = true;
-        document.getElementById("cell9").disabled = true;
-
+        cellDisable();
+    }
+    else if(checkIfTie()){
+        alert("There is no Winner!");
     }
    
     }
+
+    
+    
     
     
 }
@@ -456,39 +426,28 @@ function cell7(){
 
    
 
-    if(checkIfWin(a,b)){
+    if(checkIfWin(a,b)==1){
         
         alert("You Winn!!");
 
-        document.getElementById("cell1").disabled = true;
-        document.getElementById("cell2").disabled = true;
-        document.getElementById("cell3").disabled = true;
-        document.getElementById("cell4").disabled = true;
-        document.getElementById("cell5").disabled = true;
-        document.getElementById("cell6").disabled = true;
-        document.getElementById("cell7").disabled = true;
-        document.getElementById("cell8").disabled = true;
-        document.getElementById("cell9").disabled = true;
+        cellDisable();
 
     }
-
+    else if(checkIfTie()){
+        alert("There is no Winner!");
+    }
     else{
         computerTurn();
 
-    if(checkIfWin(a,b)){
+    if(checkIfWin(a,b)==2){
         
 
         alert("Computer Winn!!");
-        document.getElementById("cell1").disabled = true;
-        document.getElementById("cell2").disabled = true;
-        document.getElementById("cell3").disabled = true;
-        document.getElementById("cell4").disabled = true;
-        document.getElementById("cell5").disabled = true;
-        document.getElementById("cell6").disabled = true;
-        document.getElementById("cell7").disabled = true;
-        document.getElementById("cell8").disabled = true;
-        document.getElementById("cell9").disabled = true;
+        cellDisable();
 
+    }
+    else if(checkIfTie()){
+        alert("There is no Winner!");
     }
 
     }
@@ -515,42 +474,34 @@ function cell8(){
     }
  
 
-    if(checkIfWin(a,b)){
+    if(checkIfWin(a,b)==1){
         
         alert("You Winn!!");
 
-        document.getElementById("cell1").disabled = true;
-        document.getElementById("cell2").disabled = true;
-        document.getElementById("cell3").disabled = true;
-        document.getElementById("cell4").disabled = true;
-        document.getElementById("cell5").disabled = true;
-        document.getElementById("cell6").disabled = true;
-        document.getElementById("cell7").disabled = true;
-        document.getElementById("cell8").disabled = true;
-        document.getElementById("cell9").disabled = true;
+        cellDisable();
 
+    }
+    else if(checkIfTie()){
+        alert("There is no Winner!");
     }
     else{
 
         computerTurn();
 
-    if(checkIfWin(a,b)){
+    if(checkIfWin(a,b)==2){
         
 
         alert("Computer Winn!!");
-        document.getElementById("cell1").disabled = true;
-        document.getElementById("cell2").disabled = true;
-        document.getElementById("cell3").disabled = true;
-        document.getElementById("cell4").disabled = true;
-        document.getElementById("cell5").disabled = true;
-        document.getElementById("cell6").disabled = true;
-        document.getElementById("cell7").disabled = true;
-        document.getElementById("cell8").disabled = true;
-        document.getElementById("cell9").disabled = true;
+        cellDisable();
 
+    }
+    else if(checkIfTie()){
+        alert("There is no Winner!");
     }
    
     }
+
+    
     
     
 }
@@ -572,43 +523,33 @@ function cell9(){
 
    
 
-    if(checkIfWin(a,b)){
+    if(checkIfWin(a,b)==1){
         
         alert("You Winn!!");
 
-        document.getElementById("cell1").disabled = true;
-        document.getElementById("cell2").disabled = true;
-        document.getElementById("cell3").disabled = true;
-        document.getElementById("cell4").disabled = true;
-        document.getElementById("cell5").disabled = true;
-        document.getElementById("cell6").disabled = true;
-        document.getElementById("cell7").disabled = true;
-        document.getElementById("cell8").disabled = true;
-        document.getElementById("cell9").disabled = true;
+        cellDisable();
 
+    }
+    else if(checkIfTie()){
+        alert("There is no Winner!");
     }
     else{
 
         computerTurn();
 
-        if(checkIfWin(a,b)){
+        if(checkIfWin(a,b)==2){
             
 
             alert("Computer Winn!!");
-            document.getElementById("cell1").disabled = true;
-            document.getElementById("cell2").disabled = true;
-            document.getElementById("cell3").disabled = true;
-            document.getElementById("cell4").disabled = true;
-            document.getElementById("cell5").disabled = true;
-            document.getElementById("cell6").disabled = true;
-            document.getElementById("cell7").disabled = true;
-            document.getElementById("cell8").disabled = true;
-            document.getElementById("cell9").disabled = true;
+            cellDisable();
 
+        }
+        else if(checkIfTie()){
+            alert("There is no Winner!");
         }
     }
    
-   
+    
 
 
     
@@ -627,8 +568,11 @@ function checkIfWin(a,b){
         } 
 
     }
-    if( flag1 == 3 || flag2 == 3){
-        return true;
+    if( flag1 == 3  ){
+        return 1;
+    }
+    else if(flag2 == 3){
+        return 2;
     }
 
     flag1 = 0;
@@ -642,8 +586,11 @@ function checkIfWin(a,b){
             flag2 ++ ;
         } 
     }
-    if( flag1 == 3 || flag2 == 3 ){
-        return true;
+    if( flag1 == 3  ){
+        return 1;
+    }
+    else if(flag2 == 3){
+        return 2;
     }
 
     flag1 = 0;
@@ -657,8 +604,11 @@ function checkIfWin(a,b){
             flag2 ++ ;
         } 
     }
-    if( flag2 == 3 || flag2 == 3 ){
-        return true;
+    if( flag1 == 3  ){
+        return 1;
+    }
+    else if(flag2 == 3){
+        return 2;
     }
     
     flag1 = 0;
@@ -672,8 +622,11 @@ function checkIfWin(a,b){
             flag2 ++ ;
         } 
     }
-    if( flag1 == 3 || flag2 == 3 ){
-        return true;
+    if( flag1 == 3  ){
+        return 1;
+    }
+    else if(flag2 == 3){
+        return 2;
     }
 
     flag1 = 0;
@@ -687,8 +640,11 @@ function checkIfWin(a,b){
             flag2 ++ ;
         } 
     }
-    if( flag1 == 3  || flag2 == 3 ){
-        return true;
+    if( flag1 == 3  ){
+        return 1;
+    }
+    else if(flag2 == 3){
+        return 2;
     }
 
     flag1 = 0;
@@ -702,8 +658,11 @@ function checkIfWin(a,b){
             flag2 ++ ;
         } 
     }
-    if( flag1 == 3  || flag2 == 3 ){
-        return true;
+    if( flag1 == 3  ){
+        return 1;
+    }
+    else if(flag2 == 3){
+        return 2;
     }
 
     flag1 = 0;
@@ -717,8 +676,11 @@ function checkIfWin(a,b){
             flag2 ++ ;
         } 
     }
-    if( flag1 == 3  || flag2 == 3 ){
-        return true;
+    if( flag1 == 3  ){
+        return 1;
+    }
+    else if(flag2 == 3){
+        return 2;
     }
     flag1 = 0;
     flag2 = 0;
@@ -733,8 +695,11 @@ function checkIfWin(a,b){
             } 
         
     }
-    if( flag1 == 3  || flag2 == 3 ){
-        return true;
+    if( flag1 == 3  ){
+        return 1;
+    }
+    else if(flag2 == 3){
+        return 2;
     }
     else{
         return false;
