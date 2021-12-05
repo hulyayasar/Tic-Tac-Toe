@@ -1,3 +1,6 @@
+var url="http://localhost:3000/post";
+
+
 function cellDisable(){
     document.getElementById("cell1").disabled = true;
     document.getElementById("cell2").disabled = true;
